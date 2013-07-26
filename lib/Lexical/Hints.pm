@@ -2,7 +2,7 @@ package Lexical::Hints;
 
 use 5.010; use warnings;
 
-our $VERSION = '0.000002';
+our $VERSION = '0.000003';
 
 # Track phase...
 my $compiling;
@@ -50,7 +50,7 @@ sub _gen_set_hint {
         }
 
         # Pre-existing hints can still be updated at run-time...
-        elsif (defined(my $scope_ID = (caller $opts_ref->{up}+1)[10]{$hint_owner.'->'.$key})) {
+        elsif (defined(my $scope_ID = ((caller $opts_ref->{up}+1)[10]//{})->{$hint_owner.'->'.$key})) {
             # Update the corresponding value internally...
             $LEXICAL_HINTS_FOR{$hint_owner}[$scope_ID] = $value;
         }
@@ -145,7 +145,7 @@ Lexical::Hints - A featureful replacement for $^H
 
 =head1 VERSION
 
-This document describes Lexical::Hints version 0.000002
+This document describes Lexical::Hints version 0.000003
 
 
 =head1 SYNOPSIS
