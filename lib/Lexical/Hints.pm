@@ -2,7 +2,7 @@ package Lexical::Hints;
 
 use 5.010; use warnings;
 
-our $VERSION = '0.000003';
+our $VERSION = '0.000004';
 
 # Track phase...
 my $compiling;
@@ -46,7 +46,7 @@ sub _gen_set_hint {
             $^H{$hint_owner.'->'.$key} = $scope_ID;
 
             # Save the corresponding value internally...
-            push $LEXICAL_HINTS_FOR{$hint_owner}, $value;
+            push @{$LEXICAL_HINTS_FOR{$hint_owner}}, $value;
         }
 
         # Pre-existing hints can still be updated at run-time...
@@ -145,7 +145,7 @@ Lexical::Hints - A featureful replacement for $^H
 
 =head1 VERSION
 
-This document describes Lexical::Hints version 0.000003
+This document describes Lexical::Hints version 0.000004
 
 
 =head1 SYNOPSIS

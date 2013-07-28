@@ -13,3 +13,9 @@ Revision history for Lexical-Hints
 
     - Fix for Perl 5.18+ madness (thanks Peter!)
 
+
+
+0.000004  Sun Jul 28 06:41:32 2013
+
+    - Tweaked to run under 5.10 (thanks James!)
+
