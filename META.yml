@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:               Lexical-Hints
-version:            0.000004
-abstract:           A featureful replacement for create_distdirH
+version:            0.000005
+abstract:           A featureful replacement for %^H
 author:
     - Damian Conway <DCONWAY@CPAN.org>
 license:            artistic2

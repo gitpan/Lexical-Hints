@@ -2,7 +2,7 @@ package Lexical::Hints;
 
 use 5.010; use warnings;
 
-our $VERSION = '0.000004';
+our $VERSION = '0.000005';
 
 # Track phase...
 my $compiling;
@@ -140,12 +140,12 @@ __END__
 
 =head1 NAME
 
-Lexical::Hints - A featureful replacement for $^H
+Lexical::Hints - A featureful replacement for %^H
 
 
 =head1 VERSION
 
-This document describes Lexical::Hints version 0.000004
+This document describes Lexical::Hints version 0.000005
 
 
 =head1 SYNOPSIS

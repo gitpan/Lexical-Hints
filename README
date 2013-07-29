@@ -1,4 +1,4 @@
-Lexical::Hints version 0.000004
+Lexical::Hints version 0.000005
 
 This module provides a cleaner interface to the built-in "lexical hints
 hash" (%^H), and adds some useful additions to the existing mechanism.
